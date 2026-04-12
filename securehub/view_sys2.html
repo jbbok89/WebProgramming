@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecureHub – BOF (Buffer OverFlow) 개념 정리</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="view.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">Secure<span>Hub</span></a>
+      <div class="header-crumb">
+        <a href="main_system.html">SYSTEM</a>
+        <span class="sep">›</span>
+        <span class="active">게시글 상세</span>
+      </div>
+      <div class="header-right">
+        <a class="btn" href="main_system.html">← 목록</a>
+      </div>
+    </header>
+
+    <div class="view-wrapper">
+      <div class="container">
+        <div class="title">BOF (Buffer OverFlow) 개념 정리</div>
+
+        <div class="info">
+          <span class="tag tag-zero">VUL</span>
+          <span class="sep-bar">|</span>
+          <span class="nickname">cucu</span>
+          <span class="sep-bar">|</span>
+          <span class="date">2026-04-09</span>
+        </div>
+
+        <div class="content">
+스택 버퍼 오버플로우(Stack Buffer Overflow)는 스택에 위치한 버퍼에
+할당된 크기보다 더 많은 데이터가 입력되어 발생하는 취약점입니다. <br />
+공격자는 할당된 버퍼의 경계를 넘어서는 입력을 통해 인접한 메모리
+영역을 덮어씀으로써, 프로그램의 의도된 동작을 방해하거나 권한을 획득할
+수 있습니다.
+<br />
+<strong>주요 보안 위협</strong>
+- 중요 데이터 변조: 버퍼 바로 뒤에 위치한 중요한
+변수를 덮어써서 보안 로직을 무력화하고 권한을 얻을 수 있습니다. <br />
+- 데이터 유출: 문자열의 끝을 알리는 널바이트를 덮어써서 제거함으로써,
+인접한 메모리에 저장된 민감한 정보가 함께 출력되도록 유도할 수
+있습니다. <br />
+- 실행 흐름 조작: 함수 호출 시 스택에 저장되는 반환 주소를 공격자가
+원하는 함수의 주소로 덮어써서 프로그램의 실행 경로를 완전히 바꿀 수
+있습니다.
+<br />
+<strong>주요 특징 및 주의사항</strong>
+- 메모리 구조: 스택은 높은 주소 방향으로 데이터를 덮어쓰며, 함수의
+반환 주소 등 제어 정보가 버퍼 뒤에 위치하기 때문에 위험합니다. <br />
+- 구조체 배치: 구조체 내부에서는 먼저 선언된 멤버가 낮은 주소에
+배치되므로, 멤버 간의 입력값 조작을 통해 오버플로우 공격이 가능합니다.
+        </div>
+
+        <div class="image"></div>
+
+        <div class="buttons">
+          <a class="btn btn-gray" href="write.html">수정</a>
+          <a class="btn btn-danger" href="main_system.html">삭제</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

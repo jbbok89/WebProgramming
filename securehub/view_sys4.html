@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecureHub – PIE</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="view.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">Secure<span>Hub</span></a>
+      <div class="header-crumb">
+        <a href="main_system.html">SYSTEM</a>
+        <span class="sep">›</span>
+        <span class="active">게시글 상세</span>
+      </div>
+      <div class="header-right">
+        <a class="btn" href="main_system.html">← 목록</a>
+      </div>
+    </header>
+
+    <div class="view-wrapper">
+      <div class="container">
+        <div class="title">PIE (Position-Independent Executable)</div>
+
+        <div class="info">
+          <span class="tag tag-one">Security</span>
+          <span class="sep-bar">|</span>
+          <span class="nickname">cucu</span>
+          <span class="sep-bar">|</span>
+          <span class="date">2026-04-12</span>
+        </div>
+
+        <div class="content">
+PIE(Position-Independent Executable)는 실행 파일의 코드와 데이터 영역까지 메모리상의 무작위 주소에 매핑하여 보안을 강화하는 기술입니다. <br>
+기본적인 ASLR이 스택, 힙, 라이브러리 주소만 무작위화하는 것과 달리, PIE를 적용하면 실행 파일(코드 영역) 자체의 위치도 실행 시마다 바뀝니다. 
+<br>
+<strong>주요 개념</strong>
+- PIC(Position-Independent Code)
+메모리의 어느 위치에 적재되어도 코드의 의미가 훼손되지 않는 코드를 말합니다. 
+rip 레지스터를 기준으로 데이터를 상대 참조하므로, 전체 주소가 바뀌어도 내부 간격이 일정하여 정상 실행이 가능합니다. <br> 
+- 시스템 제약: ASLR이 적용되지 않은 시스템에서는 PIE가 적용된 파일이라도 무작위 주소에 적재되지 않을 수 있습니다. 
+<br>
+
+        <div class="image"></div>
+
+        <div class="buttons">
+          <a class="btn btn-gray" href="write.html">수정</a>
+          <a class="btn btn-danger" href="main_system.html">삭제</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
