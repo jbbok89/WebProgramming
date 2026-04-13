@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecureHub – 게시글 상세</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="view.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">Secure<span>Hub</span></a>
+      <div class="header-crumb">
+        <a href="main.html">WEB</a>
+        <span class="sep">›</span>
+        <span class="active">게시글 상세</span>
+      </div>
+      <div class="header-right">
+        <a class="btn" href="main.html">← 목록</a>
+      </div>
+    </header>
+
+    <div class="view-wrapper">
+      <div class="container">
+        <div class="title">[XSS] 신규 게시판 스크립트 실행 취약점</div>
+
+        <div class="info">
+          <span class="tag tag-zero">VUL</span>
+          <span class="sep-bar">|</span>
+          <span class="nickname">moi_Hack</span>
+          <span class="sep-bar">|</span>
+          <span class="date">2026-04-08</span>
+        </div>
+
+        <div class="content">
+          크로스 사이트 스크립팅(XSS)은 게시판 등에 악성 스크립트를 삽입하여
+          사용자의 쿠키를 탈취하거나 페이지를 변조하는 공격입니다. 방어 방법:
+          HTML 엔티티 치환(Escaping), CSP 설정 등.
+        </div>
+
+        <div class="image">
+          <!-- 이미지 있을 때: <img src="파일명.jpg" alt="첨부 이미지"> -->
+        </div>
+
+        <div class="buttons">
+          <a class="btn btn-gray" href="write.html">수정</a>
+          <a class="btn btn-danger" href="main.html">삭제</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

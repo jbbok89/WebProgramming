@@ -95,7 +95,7 @@ body {
 .board-table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed;
+  table-layout: fixed; /* (수정!) 보드 크기 통일 */
 }
 
 .board-table th {
@@ -114,6 +114,8 @@ body {
   font-size: 14px;
   color: #1e293b;
 }
+
+/* (수정!) 컬럼 공간 크기 수정 */
 
 /* 번호 */
 .board-table th:nth-child(1),
