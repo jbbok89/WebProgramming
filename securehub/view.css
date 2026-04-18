@@ -37,7 +37,9 @@
   border-bottom: 1px solid #e2e8f0;
 }
 
-.sep-bar { color: #e2e8f0; }
+.sep-bar {
+  color: #e2e8f0;
+}
 
 /* ── 본문 ── */
 .content {

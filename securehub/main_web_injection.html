@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SecureHub – SYSTEM &gt; Security</title>
+    <title>SecureHub – WEB 취약점</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
       rel="stylesheet"
@@ -15,7 +15,7 @@
     <header>
       <a class="logo" href="index.html">Secure<span>Hub</span></a>
       <div class="header-crumb">
-        <span class="active">SYSTEM</span>
+        <span class="active">WEB</span>
       </div>
       <div class="header-right">
         <a class="btn btn-primary" href="write.html">✏️ 글쓰기</a>
@@ -24,32 +24,29 @@
 
     <div class="container">
       <nav class="top-nav">
-        <a href="main_web.html">WEB</a>
-        <a href="main_system.html" class="active">SYSTEM</a>
-        <a href="main_cloud.html">CLOUD</a>
+        <a href="main_web.html" class="active">WEB</a>
+        <a href="main_system.html">SYSTEM</a>
+        <a href="main_cloud.html"> CLOUD</a>
       </nav>
 
       <div class="main-wrapper">
         <aside class="sidebar">
-          <h3>SYSTEM 분류</h3>
+          <h3>WEB 분류</h3>
           <ul>
-            <li><a href="main_system.html">- 전체보기 (4)</a></li>
-            <li><a href="main_system_cve.html">- CVE (1)</a></li>
+            <li><a href="main_web.html">- 전체보기 (3)</a></li>
             <li>
-              <a href="main_system_vulnerability.html">- Vulnerability (2)</a>
-            </li>
-            <li>
-              <a href="main_system_security.html" class="current"
-                >- Security (1)</a
+              <a href="main_web_injection.html" class="current">
+                - Injection (1)</a
               >
             </li>
+            <li><a href="main_web_xss,csrf.html"> - XSS/CSRF (2)</a></li>
           </ul>
         </aside>
 
         <main class="content">
           <div class="content-header">
-            <h2>SYSTEM 보안 취약점</h2>
-            <p>분류: SYSTEM &gt; Security</p>
+            <h2>WEB 보안 취약점</h2>
+            <p>분류: WEB &gt; Injection</p>
           </div>
           <table class="board-table">
             <thead>
@@ -63,13 +60,13 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td><span class="tag tag-one">Security</span></td>
+                <td><span class="tag tag-inj">Injection</span></td>
                 <td class="title-cell">
-                  <a href="view_sys4.html"
-                    >PIE (Position-Independent Executable)</a
+                  <a href="view_sql.html"
+                    >[Injection] SQL 인젝션 분석 및 방어</a
                   >
                 </td>
-                <td>2026-04-10</td>
+                <td>2026-04-09</td>
               </tr>
             </tbody>
           </table>
