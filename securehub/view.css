@@ -16,7 +16,7 @@
   margin: 0 auto;
 }
 
-/* ── 제목 ── */
+/* 제목 */
 .title {
   font-size: 24px;
   font-weight: bold;
@@ -81,7 +81,7 @@
 }
 
 .source-link:hover {
-  color: #3b82f6; /* 마우스 올리면 파란색으로 */
+  color: #3b82f6; 
   border-bottom-color: #3b82f6;
-  background-color: #eff6ff; /* 살짝 강조 효과 */
+  background-color: #eff6ff; 
 }
