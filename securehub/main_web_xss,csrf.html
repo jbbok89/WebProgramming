@@ -24,7 +24,7 @@
 
     <div class="container">
       <nav class="top-nav">
-        <a href="main.html" class="active">WEB</a>
+        <a href="main_web.html" class="active">WEB</a>
         <a href="main_system.html">SYSTEM</a>
         <a href="main_cloud.html"> CLOUD</a>
       </nav>
@@ -33,16 +33,20 @@
         <aside class="sidebar">
           <h3>WEB 분류</h3>
           <ul>
-            <li><a href="main.html">- 전체보기 (3)</a></li>
-            <li><a href="main_injection.html" class="current"> - Injection (2)</a></li>
-            <li><a href="main_xss.html"> - XSS/CSRF (1)</a></li>
+            <li><a href="main_web.html">- 전체보기 (3)</a></li>
+            <li><a href="main_web_injection.html"> - Injection (1)</a></li>
+            <li>
+              <a href="main_web_xss,csrf.html" class="current">
+                - XSS/CSRF (2)</a
+              >
+            </li>
           </ul>
         </aside>
 
         <main class="content">
           <div class="content-header">
             <h2>WEB 보안 취약점</h2>
-            <p>분류: WEB &gt; Injection</p>
+            <p>분류: WEB &gt; XSS/CSRF</p>
           </div>
           <table class="board-table">
             <thead>
@@ -56,17 +60,21 @@
             <tbody>
               <tr>
                 <td>2</td>
-                <td><span class="tag tag-zero">VUL</span></td>
+                <td><span class="tag tag-csrf">CSRF</span></td>
                 <td class="title-cell">
-                  <a href="view_idor.html">[Injection] 파라미터 변조를 통한 IDOR 공격</a>
+                  <a href="view_csrf.html"
+                    >[CSRF] CSRF(사이트 간 요청 위조) 분석 및 방어</a
+                  >
                 </td>
-                <td>2026-04-07</td>
+                <td>2026-04-09</td>
               </tr>
               <tr>
                 <td>1</td>
-                <td><span class="tag tag-zero">VUL</span></td>
+                <td><span class="tag tag-xss">XSS</span></td>
                 <td class="title-cell">
-                  <a href="view_sql.html">[Injection] SQL 인젝션 분석 및 방어</a>
+                  <a href="view_xss.html"
+                    >[XSS] 신규 게시판 스크립트 실행 취약점</a
+                  >
                 </td>
                 <td>2026-04-09</td>
               </tr>

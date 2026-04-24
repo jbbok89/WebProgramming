@@ -38,7 +38,10 @@ main > p {
   text-decoration: none;
   color: inherit;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
 }
 
 .card:hover {
@@ -46,11 +49,23 @@ main > p {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.09);
 }
 
-.card--web:hover   { border-color: #3b82f6; }
-.card--pwn:hover   { border-color: #ef4444; }
-.card--cloud:hover { border-color: #10b981; }
+.card--web:hover {
+  border-color: #3b82f6;
+}
+.card--pwn:hover {
+  border-color: #ef4444;
+}
+.card--cloud:hover {
+  border-color: #10b981;
+}
+.card--about:hover {
+  border-color: #d4f25c;
+}
 
-.card-icon { font-size: 44px; margin-bottom: 16px; }
+.card-icon {
+  font-size: 44px;
+  margin-bottom: 16px;
+}
 
 .card h2 {
   font-size: 19px;
@@ -58,7 +73,9 @@ main > p {
   margin-bottom: 14px;
 }
 
-.card ul { list-style: none; }
+.card ul {
+  list-style: none;
+}
 
 .card li {
   font-size: 14px;
@@ -67,6 +84,11 @@ main > p {
 }
 
 @media (max-width: 660px) {
-  .cards { flex-direction: column; align-items: center; }
-  .card  { width: 270px; }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 270px;
+  }
 }
