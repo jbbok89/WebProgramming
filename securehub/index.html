@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SecureHub</title>
+    <title>Security Community</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
-      <a class="logo" href="index.html">Secure<span>Hub</span></a>
+      <a class="logo" href="index.html">Security<span>Community</span></a>
     </header>
 
     <main>
@@ -21,7 +22,9 @@
       <p>학습할 보안 분야를 골라주세요</p>
       <div class="cards">
         <a class="card card--web" href="main_web.html">
-          <div class="card-icon">🌐</div>
+          <div class="card-icon">
+            <i data-lucide="globe"></i>
+          </div>
           <h2>Web</h2>
           <ul>
             <li>XSS</li>
@@ -31,7 +34,9 @@
         </a>
         <a class="card card--pwn" href="main_system.html?field=pwnable">
           <!-- 이동 경로 수정 -->
-          <div class="card-icon">💻</div>
+          <div class="card-icon">
+            <i data-lucide="terminal"></i>
+          </div>
           <h2>Pwnable</h2>
           <ul>
             <li>Buffer Overflow</li>
@@ -41,16 +46,19 @@
         </a>
         <a class="card card--cloud" href="main_cloud.html?field=cloud">
           <!-- 이동 경로 수정 -->
-          <div class="card-icon">☁️</div>
+          <div class="card-icon">
+            <i data-lucide="cloud"></i>
+          </div>
           <h2>Cloud</h2>
           <ul>
             <li>IAM 취약점</li>
           </ul>
         </a>
-
         <a class="card card--about" href="about.html">
           <!-- 이동 경로 수정 -->
-          <div class="card-icon">👥</div>
+          <div class="card-icon">
+            <i data-lucide="users"></i>
+          </div>
           <h2>About</h2>
           <ul>
             <li>Github</li>
@@ -60,5 +68,10 @@
         </a>
       </div>
     </main>
+
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
+
