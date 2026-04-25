@@ -59,12 +59,36 @@ main > p {
   border-color: #10b981;
 }
 .card--about:hover {
-  border-color: #d4f25c;
+  border-color: #a3a3a3;
 }
 
 .card-icon {
-  font-size: 44px;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon svg {
+  width: 36px;
+  height: 36px;
+  stroke: #94a3b8; /* 기본 색 – 연한 회색 */
+  stroke-width: 1.5;
+  transition: stroke 0.2s;
+}
+
+/* 호버 시 각 카드 색상으로 아이콘도 변경 */
+.card--web:hover .card-icon svg {
+  stroke: #3b82f6;
+}
+.card--pwn:hover .card-icon svg {
+  stroke: #ef4444;
+}
+.card--cloud:hover .card-icon svg {
+  stroke: #10b981;
+}
+.card--about:hover .card-icon svg {
+  stroke: #a3a3a3;
 }
 
 .card h2 {
@@ -92,3 +116,4 @@ main > p {
     width: 270px;
   }
 }
+
